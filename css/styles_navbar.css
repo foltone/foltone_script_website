@@ -6,14 +6,21 @@
 }
 
 .nav>.nav-header {
-    display: inline;
-}
-
-.nav>.nav-header>.nav-title {
     display: inline-block;
     font-size: 22px;
-    color: #fff;
+    font-weight: bold;
+    color: cadetblue;
+}
+
+.nav>.nav-header>a {
+    display: inline-block;
     padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.nav>.nav-header>a:hover {
+    background-color: rgba(61, 76, 98, 0.3);
 }
 
 .nav>.nav-btn {
@@ -30,7 +37,7 @@
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #efefef;
+    color: cadetblue;
 }
 
 .nav>.nav-links>a:hover {
