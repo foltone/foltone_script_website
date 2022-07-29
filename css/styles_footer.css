@@ -20,7 +20,7 @@
 }
 
 .footer-distributed h3 span {
-	color: cadetblue;
+	color: rgb(95, 118, 160);
 }
 
 /* Footer links */
@@ -74,7 +74,7 @@
 }
 
 .footer-distributed .footer-center p a {
-	color: cadetblue;
+	color: rgb(95, 118, 160);
 	text-decoration: none;
 	;
 }
@@ -109,7 +109,7 @@
 
 .footer-distributed .footer-about span {
 	display: block;
-	color: #ffffff;
+	color: rgb(95, 118, 160);
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
