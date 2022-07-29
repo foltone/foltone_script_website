@@ -22,9 +22,68 @@ h1{
 }
 
 footer {
-	position: relative;
-	bottom:0;
+	position: absolute;
 	width:100%;
 	background: rgb(160, 198, 255);
 	padding: 40px 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 30px;
+}
+
+.grid-item {
+    /* border: 3px solid rgba(0, 0, 0, 0.8); */
+
+    border-radius: 5px;
+    background-color: rgba(160, 198, 255, 0.8);
+
+    margin: 5px 5px 5px 5px;
+    padding: 15px 15px 70px 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* .info-contaner{
+    background-color: #f32121;
+    position: center;
+    padding: 5px;
+    margin: 10px;
+} */
+
+.button-telecharger{
+    background-color: rgba(30,144,255, 0.8);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button-telecharger:hover {
+    background-color: RoyalBlue;
+}
+
+@media (max-width:1325px) {
+
+    .grid-container {
+        background-color: #f3b421;
+        display: auto;
+        grid-template-columns: auto auto auto;
+        padding: 30px;
+    }
+
+    @media (max-width:870px) {
+        .grid-container {
+            background-color: #f32121;
+            display: auto;
+            grid-template-columns: auto auto auto;
+            padding: 30px;
+        }
+    }
+
 }

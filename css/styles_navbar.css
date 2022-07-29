@@ -19,9 +19,9 @@
     color: cadetblue;
 }
 
-.nav>.nav-header>a:hover {
+/* .nav>.nav-header>a:hover {
     background-color: rgba(61, 76, 98, 0.3);
-}
+} */
 
 .nav>.nav-btn {
     display: none;
