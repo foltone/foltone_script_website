@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+
+    background-color: rgb(206, 232, 255);
+
+    background-image: url('../img/foltone_script.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+h1{
+    color: cadetblue;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 15%;
+}
+
+footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	background: rgb(160, 198, 255);
+	padding: 40px 40px;
+}
