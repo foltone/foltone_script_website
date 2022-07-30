@@ -38,7 +38,6 @@
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: rgb(95, 118, 160);
-    font-weight: bold;
 }
 
 .nav>.nav-links>a:hover {
@@ -169,7 +168,6 @@
         padding: 43px 40px 43px 40px;
         text-decoration: none;
         color: rgb(95, 118, 160);
-        font-weight: bold;
         font-size: 44px;
     }
 
