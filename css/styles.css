@@ -60,6 +60,20 @@ footer {
     background-color: RoyalBlue;
 }
 
+.button-repositorie{
+    background-color: rgba(134,142,150, 0.8);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button-repositorie:hover {
+    background-color: rgb(52, 58, 64);
+}
+
 @media (min-width: 900px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr); 
