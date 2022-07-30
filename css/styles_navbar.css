@@ -166,6 +166,12 @@
     .nav>.nav-links>a {
         display: block;
         width: 100%;
+        padding: 43px 40px 43px 40px;
+        text-decoration: none;
+        color: rgb(95, 118, 160);
+        font-weight: bold;
+        font-size: 44px;
+
     }
 
     .nav>#nav-check:not(:checked)~.nav-links {
@@ -173,7 +179,7 @@
     }
 
     .nav>#nav-check:checked~.nav-links {
-        height: calc(100vh - 50px);
+        height: calc(100vh - 80px);
         overflow-y: auto;
     }
 }
