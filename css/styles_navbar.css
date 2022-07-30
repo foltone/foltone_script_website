@@ -171,7 +171,6 @@
         color: rgb(95, 118, 160);
         font-weight: bold;
         font-size: 44px;
-
     }
 
     .nav>#nav-check:not(:checked)~.nav-links {
