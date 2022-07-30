@@ -102,3 +102,78 @@
         overflow-y: auto;
     }
 }
+
+@media (orientation:portrait) {
+    .nav {
+        height: 80px;
+        width: 100%;
+        background-color: rgb(160, 198, 255);
+        position: relative;
+    }
+
+    .nav>.nav-header {
+        display: inline-block;
+        font-size: 44px;
+        font-weight: bold;
+        color: rgb(95, 118, 160);
+    }
+    
+    .nav>.nav-header>a {
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none;
+        color: rgb(95, 118, 160);
+    }
+    
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 55px;
+        height: 20px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 80px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}

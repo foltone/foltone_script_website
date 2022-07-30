@@ -60,14 +60,20 @@ footer {
     background-color: RoyalBlue;
 }
 
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
 @media (min-width: 600px) {
     .grid-container { 
         grid-template-columns: repeat(2, 1fr); 
     }
 }
-  
-@media (min-width: 900px) {
+
+@media (orientation:portrait) {
     .grid-container {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(1, 1fr); 
     }
 }
