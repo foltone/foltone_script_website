@@ -3,7 +3,9 @@ footer {
 	width:100%;
 	background: rgb(160, 198, 255);
 	padding: 40px 40px;
+	border-top: 2px solid rgb(119, 147, 190);
 }
+
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
