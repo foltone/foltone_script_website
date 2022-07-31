@@ -4,51 +4,40 @@ footer {
 	background: rgb(160, 198, 255);
 	padding: 40px 40px;
 }
-
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
 }
-
 /* Footer left */
-
 .footer-distributed .footer-left {
-	width: 47%;
+	width: 40%;
 }
-
 /* name */
-
 .footer-distributed h3 {
 	color: #ffffff;
 	font-size: 33px;
 	margin: 0;
 }
-
 .footer-distributed h3 span {
 	color: rgb(95, 118, 160);
 }
-
 /* Footer links */
-
 .footer-distributed .footer-links {
 	color: #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
 }
-
 .footer-distributed .footer-name {
 	color: #222;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
-
 /* Footer Center */
-
 .footer-distributed .footer-center {
-	width: 40%;
+	width: 35%;
 }
 
 .footer-distributed .footer-center p span {
@@ -57,7 +46,6 @@ footer {
 	font-size: 14px;
 	line-height: 2;
 }
-
 .footer-distributed .footer-center p a {
 	color: rgb(95, 118, 160);
 	text-decoration: none;
@@ -77,18 +65,13 @@ footer {
 	display: inline-block;
 	padding-right: 5px;
 }
-
 .footer-distributed .footer-links .link-1:before {
 	content: none;
 }
-
 /* Footer Right */
-
 .footer-distributed .footer-right {
-	margin: 0;
-
+	width: 20%;
 }
-
 .footer-distributed .footer-about {
 	line-height: 20px;
 	color: #92999f;
@@ -96,7 +79,6 @@ footer {
 	font-weight: normal;
 	margin: 0;
 }
-
 .footer-distributed .footer-about span {
 	display: block;
 	color: rgb(95, 118, 160);
@@ -104,7 +86,6 @@ footer {
 	font-weight: bold;
 	margin-bottom: 20px;
 }
-
 .footer-distributed .footer-icons a {
 	display: inline-block;
 	width: 35px;
@@ -112,12 +93,10 @@ footer {
 	cursor: pointer;
 	background-color: #33383b;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 }
 
@@ -130,7 +109,6 @@ footer {
 	.footer-distributed {
 		font: bold 14px sans-serif;
 	}
-
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
 	.footer-distributed .footer-right {
@@ -139,18 +117,14 @@ footer {
 		margin-bottom: 40px;
 		text-align: center;
 	}
-
 	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
-
 }
-
 @media (orientation:portrait) {
 	.footer-distributed {
 		font: bold 14px sans-serif;
 	}
-
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
 	.footer-distributed .footer-right {
@@ -159,7 +133,6 @@ footer {
 		margin-bottom: 40px;
 		text-align: center;
 	}
-
 	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
