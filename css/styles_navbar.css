@@ -8,19 +8,16 @@ nav {
 
 nav>.nav-header {
     display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(95, 118, 160);
 }
 
 nav>.nav-header>a {
     display: inline-block;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
     color: rgb(95, 118, 160);
-}
-
-nav>.nav-header>a:hover {
-    color: rgb(45, 56, 76);
 }
 
 nav>.nav-btn {

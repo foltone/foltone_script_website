@@ -15,7 +15,7 @@ footer {
 /* Footer left */
 
 .footer-distributed .footer-left {
-	width: 40%;
+	width: 47%;
 }
 
 /* name */
@@ -48,7 +48,7 @@ footer {
 /* Footer Center */
 
 .footer-distributed .footer-center {
-	width: 35%;
+	width: 40%;
 }
 
 .footer-distributed .footer-center p span {
@@ -85,7 +85,8 @@ footer {
 /* Footer Right */
 
 .footer-distributed .footer-right {
-	width: 20%;
+	margin: 0;
+
 }
 
 .footer-distributed .footer-about {
