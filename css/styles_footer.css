@@ -1,3 +1,10 @@
+footer {
+	position: absolute;
+	width:100%;
+	background: rgb(160, 198, 255);
+	padding: 40px 40px;
+}
+
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
@@ -130,8 +137,6 @@
 
 	margin-right: 3px;
 }
-
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
 
