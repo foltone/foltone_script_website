@@ -18,6 +18,15 @@ nav>.nav-header>a>img {
     height: 50px;
     width: 50px;
     margin-left: 10px;
+
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+nav>.nav-header>a>img:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 
 nav>.nav-header>img:hover {
