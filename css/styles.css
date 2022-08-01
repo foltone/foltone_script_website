@@ -34,16 +34,6 @@ h1 {
 
 }
 
-#app {
-    max-width: 1300px;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    margin: 60px auto 10px;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);   
-}
-
 .grid-item {
     border-radius: 5px;
     background-color: rgba(160, 198, 255, 0.8);
