@@ -2,20 +2,21 @@ nav {
     height: 50px;
     width: 100%;
     background-color: rgba(160, 198, 255, 0.9);
+    font-family: sans-serif;
     position: fixed;
     top: 0;
 }
 
 nav>.nav-header {
     display: inline-block;
+    color: rgb(95, 118, 160);
     font-size: 22px;
     font-weight: bold;
-    color: rgb(95, 118, 160);
 }
 
 nav>.nav-header>a>img {
-    width: 50px;
     height: 50px;
+    width: 50px;
     margin-left: 10px;
 }
 
@@ -35,7 +36,7 @@ nav>.nav-links {
 
 nav>.nav-links>a {
     display: inline-block;
-    padding: 13px 10px 13px 10px;
+    padding: 15px 10px 15px 10px;
     text-decoration: none;
     color: rgb(95, 118, 160);
 }
@@ -122,11 +123,11 @@ nav>#nav-check {
         height: 80px;
         margin-left: 10px;
     }
-    
+
     nav>.nav-header>img:hover {
         cursor: pointer;
     }
-    
+
     nav>.nav-btn {
         display: inline-block;
         position: absolute;
