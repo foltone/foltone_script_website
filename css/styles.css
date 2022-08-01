@@ -21,6 +21,8 @@ h1 {
     margin-top: 17%;
 }
 
+/* GRID */
+
 .grid-container {
     max-width: 1300px;
     margin-top: 60px;
@@ -77,22 +79,96 @@ h1 {
     background-color: rgb(52, 58, 64);
 }
 
+/* FOOTER */
+
+footer {
+	position: absolute;
+	width: 100%;
+	background: rgb(160, 198, 255);
+	padding: 40px 40px;
+	border-top: 2px solid rgb(119, 147, 190);
+	font-family: sans-serif;
+}
+
+.footer-left {
+	float: left;
+	width: 33%;
+	left: 25px;
+}
+
+footer h3 {
+	color: #ffffff;
+	font-size: 33px;
+	margin: 0;
+}
+
+footer h3 span {
+	color: rgb(95, 118, 160);
+}
+
+.footer-center {
+	text-align: center;
+	width: 34%;
+	display: inline-block;
+}
+
+footer .footer-links a {
+	text-decoration: none;
+	color: rgb(95, 118, 160);
+	font-size: 22px;
+}
+
+footer .footer-links a:hover {
+	text-decoration: underline;
+}
+
+footer .footer-links a:before {
+	content: "|";
+	color: #fff;
+	padding-right: 5px;
+}
+
+footer .footer-links .link-1:before {
+	content: none;
+}
+
+.footer-right {
+	float: right;
+	text-align: right;
+	width: 33%;
+	right: 25px;
+}
+
+.footer-right>p {
+	display: block;
+	color: rgb(95, 118, 160);
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin: 0;
+}
+
+.footer-icons>a {
+	display: inline-block;
+	margin-top: 30px;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #33383b;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+}
+
+.footer-icons>a:hover {
+	background-color: #646d73;
+}
+
 @media (min-width: 900px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width:600px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    h1 {
-        color: rgb(95, 118, 160);
-        text-align: center;
-        font-size: 20px;
-        font-family: sans-serif;
-        margin-top: 17%;
     }
 }
 
@@ -100,6 +176,7 @@ h1 {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     h1 {
         color: rgb(95, 118, 160);
         text-align: center;
@@ -107,4 +184,17 @@ h1 {
         font-family: sans-serif;
         margin-top: 17%;
     }
+
+	footer {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-left,
+	.footer-center,
+	.footer-right {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
 }
