@@ -10,14 +10,14 @@ function save() {
 var checked = JSON.parse(localStorage.getItem("chk"));
 document.getElementById("chk").checked = checked;
 
-window.onload = function() {
+window.addEventListener("load", function() {
   console.log(document.body)
   if (checked) {
     document.body.classList.toggle('dark');
   } else {
     document.body.classList.toggle('light');
   }
-};
+});
 
 
 const scriptData = [
