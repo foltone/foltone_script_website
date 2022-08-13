@@ -44,7 +44,6 @@ const scriptData = [
     vidéo: "R1hPkNakpkU",
     github: "https://github.com/foltone/foltone_zone_safe",
   },
-
 ];
 
 function scriptTemplate(script) {
