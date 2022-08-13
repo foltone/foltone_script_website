@@ -1,4 +1,5 @@
 const chk = document.getElementById('chk');
+const loader = document.querySelector('.loader');
 
 chk.addEventListener('change', () => {
   document.body.classList.toggle('dark');
@@ -11,7 +12,7 @@ var checked = JSON.parse(localStorage.getItem("chk"));
 document.getElementById("chk").checked = checked;
 
 window.addEventListener("load", function() {
-  console.log(document.body)
+  loader.classList.add('fondu-out');
   if (checked) {
     document.body.classList.toggle('dark');
   } else {
