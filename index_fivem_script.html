@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/335855e8bc.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="foo()">
     <nav>
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
@@ -27,11 +27,18 @@
             <a href="index.html">Home</a>
             <a href="index_fivem_script.html">Fivem script</a>
         </div>
+        <div class="contaner-chekbox">
+            <input type="checkbox" class="checkbox" id="chk" onClick="save()"/>
+            <label class="label" for="chk">
+                <div class="moon">🌙</div>
+                <div class="sun">☀️</div>
+                <div class="ball"></div>
+            </label>
+        </div>
     </nav>
 
 
     <div id="grid-container"></div>
-    <script  src="script/script.js"></script>
 
     <footer>
         <div class="footer-left">
@@ -57,5 +64,6 @@
     </footer>
 
 </body>
+<script  src="script/script.js"></script>
 
 </html>

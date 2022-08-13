@@ -1,3 +1,25 @@
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});
+
+function save() {
+  localStorage.setItem("chk", chk.checked);
+}
+var checked = JSON.parse(localStorage.getItem("chk"));
+document.getElementById("chk").checked = checked;
+
+window.onload = function() {
+  console.log(document.body)
+  if (checked) {
+    document.body.classList.toggle('dark');
+  } else {
+    document.body.classList.toggle('light');
+  }
+};
+
+
 const scriptData = [
   {
     name: "foltone distributeur",
