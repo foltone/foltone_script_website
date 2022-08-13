@@ -23,62 +23,72 @@ h1 {
 
 /* GRID */
 
-.grid-container {
+#grid-container {
     max-width: 1300px;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    margin: 60px auto 10px;
+    margin: 65px auto 15px;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
 }
 
 .grid-item {
     border-radius: 5px;
     background-color: rgba(160, 198, 255, 0.8);
-
-    margin: 5px 5px 5px 5px;
-    padding: 15px 15px 90px 15px;
-
-    font-family: sans-serif;
-    color: rgb(28, 80, 177);
-    font-size: 22px;
-    font-weight: bold;
     text-align: center;
+    padding: 15px 15px 15px 15px;
 }
 
-.grid-item>a {
+.grid-item>p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(28, 80, 177);
+}
+
+.grid-item>iframe {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 70%;
+    border-radius: 3px;
+}
+
+.grid-item>.buttons {
+    cursor: pointer;
+    padding: auto;
+
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.bt-download {
+    background-color: rgba(30, 144, 255, 0.8);
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+
+    color: white;
     text-decoration: none;
 }
 
-.button-telecharger {
-    background-color: rgba(30, 144, 255, 0.8);
-    border: none;
-    border-radius: 3px;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-    
-}
-
-.button-telecharger:hover {
+.bt-download:hover {
     background-color: RoyalBlue;
+    text-decoration: underline;
 }
 
-.button-repositorie {
+.bt-repositorie {
     background-color: rgba(134, 142, 150, 0.8);
-    border: none;
     border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+
     color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
+    text-decoration: none;
 }
 
-.button-repositorie:hover {
+.bt-repositorie:hover {
     background-color: rgb(52, 58, 64);
+    text-decoration: underline;
 }
 
 /* FOOTER */
@@ -168,15 +178,10 @@ footer .footer-links .link-1:before {
 	background-color: #646d73;
 }
 
-@media (min-width: 900px) {
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 @media (orientation:portrait) {
-    .grid-container {
+    #grid-container {
         grid-template-columns: repeat(1, 1fr);
+        margin: 15px auto 15px;
     }
 
     h1 {
