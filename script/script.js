@@ -38,6 +38,6 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-  var superHeroes = request.response
-  document.getElementById("grid-container").innerHTML = `${superHeroes.map(scriptTemplate).join("")}`;
+  var data = request.response
+  document.getElementById("grid-container").innerHTML = `${data.map(scriptTemplate).join("")}`;
 }
