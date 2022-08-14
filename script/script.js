@@ -8,6 +8,7 @@ chk.addEventListener('change', () => {
 function save() {
   localStorage.setItem("chk", chk.checked);
 }
+
 var checked = JSON.parse(localStorage.getItem("chk"));
 document.getElementById("chk").checked = checked;
 
@@ -15,8 +16,6 @@ window.addEventListener("load", function() {
   loader.classList.add('fondu-out');
   if (checked) {
     document.body.classList.toggle('dark');
-  } else {
-    document.body.classList.toggle('light');
   }
 });
 
