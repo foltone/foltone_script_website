@@ -2,7 +2,8 @@
     --body-background-color: rgb(206, 232, 255);
     --body-background-color-dark: rgb(58, 65, 73);
 
-    --color-text: rgb(95, 118, 160);
+    --color-text: rgb(68, 86, 120);
+    --color-text-hover: rgb(84, 124, 197);
 
     --color-element: 160, 198, 255;
     --color-element-dark: 41, 49, 62;
@@ -65,7 +66,6 @@ nav>.nav-header {
     float: left;
     color: var(--color-text);
     font-size: 22px;
-    font-weight: bold;
 }
 
 nav>.nav-header>a>img {
@@ -78,9 +78,12 @@ nav>.nav-header>a>img {
     transition-property: transform;
 }
 
-nav>.nav-header>a>img:hover,
-nav>.nav-header>a>p:hover {
+nav>.nav-header>a>img:hover {
     transform: rotate(360deg);
+}
+
+nav>.nav-header>a>p:hover {
+    color: var(--color-text-hover);
 }
 
 nav>.nav-header>a>p {
@@ -110,7 +113,7 @@ nav>.nav-links>a {
 }
 
 nav>.nav-links>a:hover {
-    background-color: rgba(61, 76, 98, 0.3);
+    color: var(--color-text-hover);
 }
 
 nav>#nav-check {
@@ -223,7 +226,7 @@ body.dark .grid-item {
 }
 
 .bt-download {
-    background-color: rgba(30, 144, 255, 0.8);
+    background-color: rgba(55, 155, 255, 0.8);
     border-radius: 3px;
     padding: 10px 10px 10px 10px;
     display: inline-block;
@@ -233,7 +236,7 @@ body.dark .grid-item {
 }
 
 .bt-download:hover {
-    background-color: RoyalBlue;
+    background-color: rgb(32, 68, 178);
     text-decoration: underline;
 }
 
@@ -396,7 +399,7 @@ footer .footer-links .link-1:before {
 
     nav>.nav-btn>label:hover,
     nav #nav-check:checked~.nav-btn>label {
-        background-color: rgba(0, 0, 0, 0.3);
+        color: var(--color-text-hover);;
     }
 
     nav>.nav-btn>label>span {
