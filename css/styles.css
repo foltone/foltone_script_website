@@ -80,11 +80,15 @@ nav>.nav-header>a>img {
 
 nav>.nav-header>a>img:hover {
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
 }
 
-nav>.nav-header>img:hover {
-    cursor: pointer;
+nav>.nav-header>a>p {
+    display: inline;
+    float: right;
+    padding: 15px 10px 17px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color-text);
 }
 
 nav>.nav-btn {
