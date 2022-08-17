@@ -1,4 +1,5 @@
 const chk = document.getElementById('chk');
+const checked = JSON.parse(localStorage.getItem("chk"));
 const loader = document.querySelector('.loader');
 
 chk.addEventListener('change', () => {
@@ -9,7 +10,6 @@ function save() {
   localStorage.setItem("chk", chk.checked);
 }
 
-var checked = JSON.parse(localStorage.getItem("chk"));
 document.getElementById("chk").checked = checked;
 
 window.addEventListener("load", function() {
@@ -32,12 +32,12 @@ function scriptTemplate(script) {
   `;
 }
 
-var requestURL = 'https://foltone.github.io/foltone_script_website/json/data.json';
-var request = new XMLHttpRequest();
+const requestURL = 'https://foltone.github.io/foltone_script_website/json/data.json';
+const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-  var data = request.response
+  const data = request.response
   document.getElementById("grid-container").innerHTML = `${data.map(scriptTemplate).join("")}`;
 }
