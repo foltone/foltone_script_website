@@ -78,7 +78,8 @@ nav>.nav-header>a>img {
     transition-property: transform;
 }
 
-nav>.nav-header>a>img:hover {
+nav>.nav-header>a>img:hover,
+nav>.nav-header>a>p:hover {
     transform: rotate(360deg);
 }
 
@@ -372,6 +373,11 @@ footer .footer-links .link-1:before {
 
     nav>.nav-header>img:hover {
         cursor: pointer;
+    }
+
+    nav>.nav-header>a>p {
+        padding: 25px 10px 17px 10px;
+        font-size: 54px;
     }
 
     nav>.nav-btn {
