@@ -252,7 +252,7 @@ footer .footer-links a:before {
   color: #fff;
   padding-right: 5px;
 }
-footer .link-1:before {
+footer .footer-links .link-1:before {
   content: none;
 }
 footer .footer-right {
