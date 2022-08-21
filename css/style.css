@@ -1,13 +1,3 @@
-@charset "UTF-8";
-:root {
-  --body-background-color: rgb(206, 232, 255);
-  --body-background-color-dark: rgb(58, 65, 73);
-  --color-text: rgb(68, 86, 120);
-  --color-text-hover: rgb(84, 124, 197);
-  --color-element: 160, 198, 255;
-  --color-element-dark: 41, 49, 62;
-}
-
 ::-webkit-scrollbar {
   width: 8px;
   background-color: rgba(0, 0, 0, 0);
@@ -24,7 +14,7 @@
 
 body {
   margin: 0px;
-  background-color: var(--body-background-color);
+  background-color: rgb(206, 232, 255);
   background-image: url("../img/foltone_script.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -32,11 +22,11 @@ body {
 }
 
 body.dark {
-  background-color: var(--body-background-color-dark);
+  background-color: rgb(58, 65, 73);
 }
 
 h1 {
-  color: var(--color-text);
+  color: rgb(68, 86, 120);
   text-align: center;
   font-size: 60px;
   font-family: sans-serif;
@@ -47,24 +37,18 @@ h1 {
 nav {
   height: 50px;
   width: 100%;
-  background-color: rgba(var(--color-element), 0.9);
+  background-color: rgba(160, 198, 255, 0.9);
   font-family: sans-serif;
   position: fixed;
   top: 0;
 }
-
-body.dark nav {
-  background-color: rgba(var(--color-element-dark), 0.9);
-}
-
-nav > .nav-header {
+nav .nav-header {
   display: inline;
   float: left;
-  color: var(--color-text);
+  color: rgb(68, 86, 120);
   font-size: 22px;
 }
-
-nav > .nav-header > a > img {
+nav .nav-header a img {
   height: 50px;
   width: 50px;
   margin-left: 10px;
@@ -72,47 +56,40 @@ nav > .nav-header > a > img {
   transition-duration: 0.8s;
   transition-property: transform;
 }
-
-nav > .nav-header > a > img:hover {
+nav .nav-header a img:hover {
   transform: rotate(360deg);
 }
-
-nav > .nav-header > a > p:hover {
-  color: var(--color-text-hover);
-}
-
-nav > .nav-header > a > p {
+nav .nav-header p {
   display: inline;
   float: right;
   padding: 15px 10px 17px 10px;
   font-size: 18px;
   text-decoration: none;
-  color: var(--color-text);
+  color: rgb(68, 86, 120);
 }
-
-nav > .nav-btn {
+nav .nav-header p:hover {
+  color: rgb(84, 124, 197);
+}
+nav .nav-btn {
   display: none;
 }
-
-nav > .nav-links {
+nav .nav-links {
   display: inline;
   float: left;
   font-size: 18px;
 }
-
-nav > .nav-links > a {
+nav .nav-links a {
   display: inline-block;
   padding: 15px 10px 17px 10px;
   text-decoration: none;
-  color: var(--color-text);
+  color: rgb(68, 86, 120);
+}
+nav .nav-links a:hover {
+  color: rgb(84, 124, 197);
 }
 
-nav > .nav-links > a:hover {
-  color: var(--color-text-hover);
-}
-
-nav > #nav-check {
-  display: none;
+body.dark nav {
+  background-color: rgba(41, 49, 62, 0.9);
 }
 
 .contaner-chekbox {
@@ -121,12 +98,13 @@ nav > #nav-check {
   margin-top: -5px;
   margin-right: 10px;
 }
-
-.checkbox {
+.contaner-chekbox .checkbox {
   opacity: 0;
 }
-
-.label {
+.contaner-chekbox :checked + .label .ball {
+  transform: translateX(24px);
+}
+.contaner-chekbox .label {
   position: relative;
   padding: 5px;
   height: 26px;
@@ -136,9 +114,7 @@ nav > #nav-check {
   cursor: pointer;
   display: flex;
 }
-
-/* point blanc */
-.label .ball {
+.contaner-chekbox .label .ball {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -148,15 +124,13 @@ nav > #nav-check {
   border-radius: 50%;
   transition: transform 0.2s linear;
 }
-
-.label .ball:hover {
+.contaner-chekbox .label .ball:hover {
   box-shadow: 0 0 0 rgba(44, 100, 204, 0.9);
   animation: pulse 2s infinite;
 }
 
-/* point blanc déplacement */
-.checkbox:checked + .label .ball {
-  transform: translateX(24px);
+nav > #nav-check {
+  display: none;
 }
 
 @keyframes pulse {
@@ -181,35 +155,32 @@ nav > #nav-check {
 
 .grid-item {
   border-radius: 5px;
-  background-color: rgba(var(--color-element), 0.8);
+  background-color: rgba(160, 198, 255, 0.8);
   text-align: center;
   padding: 15px 15px 15px 15px;
 }
-
-body.dark .grid-item {
-  background-color: rgba(var(--color-element-dark), 0.8);
-}
-
-.grid-item > p {
+.grid-item p {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 22px;
-  color: var(--color-text);
+  color: rgb(68, 86, 120);
 }
-
-.grid-item > iframe {
+.grid-item iframe {
   margin-top: 5px;
   margin-bottom: 5px;
   width: 100%;
   height: 70%;
   border-radius: 3px;
 }
-
-.grid-item > .buttons {
+.grid-item .buttons {
   cursor: pointer;
   padding: auto;
   font-size: 20px;
   font-family: sans-serif;
+}
+
+body.dark .grid-item {
+  background-color: rgba(41, 49, 62, 0.8);
 }
 
 .bt-download {
@@ -220,8 +191,7 @@ body.dark .grid-item {
   color: white;
   text-decoration: none;
 }
-
-.bt-download:hover {
+.bt-download .bt-download:hover {
   background-color: rgb(32, 68, 178);
   text-decoration: underline;
 }
@@ -234,8 +204,7 @@ body.dark .grid-item {
   color: white;
   text-decoration: none;
 }
-
-.bt-repositorie:hover {
+.bt-repositorie .bt-repositorie:hover {
   background-color: rgb(52, 58, 64);
   text-decoration: underline;
 }
@@ -244,79 +213,63 @@ body.dark .grid-item {
 footer {
   position: absolute;
   width: 100%;
-  background: rgb(var(--color-element));
+  background: rgb(160, 198, 255);
   padding: 40px 40px;
   border-top: 2px solid rgb(119, 147, 190);
   font-family: sans-serif;
 }
-
-body.dark footer {
-  background: rgb(var(--color-element-dark));
+footer .footer-name {
+  color: #ffffff;
 }
-
-.footer-left {
-  float: left;
-  width: 33%;
-  left: 25px;
-}
-
 footer h3 {
   color: #ffffff;
   font-size: 33px;
   margin: 0;
 }
-
-.footer-name {
-  color: #ffffff;
-}
-
 footer h3 span {
-  color: var(--color-text);
+  color: rgb(68, 86, 120);
 }
-
-.footer-center {
+footer .footer-left {
+  float: left;
+  width: 33%;
+  left: 25px;
+}
+footer .footer-center {
   text-align: center;
   width: 34%;
   display: inline-block;
 }
-
 footer .footer-links a {
   text-decoration: none;
-  color: var(--color-text);
+  color: rgb(68, 86, 120);
   font-size: 22px;
 }
-
 footer .footer-links a:hover {
   text-decoration: underline;
 }
-
 footer .footer-links a:before {
   content: "|";
   color: #fff;
   padding-right: 5px;
 }
-
-footer .footer-links .link-1:before {
+footer .link-1:before {
   content: none;
 }
-
-.footer-right {
+footer .footer-right {
   float: right;
   text-align: right;
   width: 33%;
   right: 25px;
 }
-
-.footer-right > p {
+footer .footer-right p {
   display: block;
-  color: var(--color-text);
+  color: rgb(68, 86, 120);
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 20px;
   margin: 0;
 }
-
-.footer-icons > a {
+footer .footer-icons a {
   display: inline-block;
   margin-top: 30px;
   width: 35px;
@@ -329,9 +282,12 @@ footer .footer-links .link-1:before {
   text-align: center;
   line-height: 35px;
 }
-
-.footer-icons > a:hover {
+footer .footer-icons a:hover {
   background-color: #646d73;
+}
+
+body.dark footer {
+  background: rgb(41, 49, 62);
 }
 
 @media (orientation: portrait) {
@@ -344,67 +300,64 @@ footer .footer-links .link-1:before {
     width: 100%;
     position: relative;
   }
-  nav > .nav-header {
+  nav .nav-header {
     display: inline-block;
     font-size: 44px;
     font-weight: bold;
   }
-  nav > .nav-header > a > img {
+  nav .nav-header a img {
     width: 100px;
     height: 100px;
     margin-left: 10px;
   }
-  nav > .nav-header > img:hover {
-    cursor: pointer;
-  }
-  nav > .nav-header > a > p {
+  nav .nav-header a p {
     padding: 25px 10px 17px 10px;
     font-size: 54px;
   }
-  nav > .nav-btn {
+  nav .nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
-  nav > .nav-btn > label {
+  nav .nav-btn label {
     display: inline-block;
     width: 100px;
     height: 100px;
     padding: 13px;
   }
-  nav > .nav-btn > label:hover,
-nav #nav-check:checked ~ .nav-btn > label {
-    color: var(--color-text-hover);
-  }
-  nav > .nav-btn > label > span {
+  nav .nav-btn label span {
     display: block;
     width: 75px;
     height: 30px;
     border-top: 4px solid #eee;
   }
-  nav > .nav-links {
+  nav .nav-btn label:hover,
+nav .nav-btn nav #nav-check:checked ~ .nav-btn > label {
+    color: rgb(84, 124, 197);
+  }
+  nav .nav-links {
     position: absolute;
     top: 100px;
     left: 0px;
     height: 0px;
     width: 100%;
     display: block;
-    background-color: rgb(var(--color-element));
+    background-color: rgb(160, 198, 255);
     transition: all 0.3s ease-in;
     overflow-y: hidden;
     text-align: center;
   }
-  body.dark nav > .nav-links {
-    background-color: rgb(var(--color-element-dark));
-  }
-  nav > .nav-links > a {
+  nav .nav-links a {
     border-top: 2px solid rgb(119, 147, 190);
     display: block;
     width: 100%;
     padding: 43px 40px 43px 40px;
     text-decoration: none;
     font-size: 44px;
+  }
+  body.dark nav > .nav-links {
+    background-color: rgb(41, 49, 62);
   }
   nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -414,14 +367,13 @@ nav #nav-check:checked ~ .nav-btn > label {
     height: auto;
     overflow-y: auto;
   }
-  /* OTHER */
   .contaner-chekbox {
     display: inline;
     float: left;
     margin-left: 30px;
     margin-top: 20px;
   }
-  .label {
+  .contaner-chekbox .label {
     transform: scale(2);
   }
   /* GRID */
@@ -433,9 +385,9 @@ nav #nav-check:checked ~ .nav-btn > label {
   footer {
     font: bold 14px sans-serif;
   }
-  .footer-left,
-.footer-center,
-.footer-right {
+  footer .footer-left,
+footer .footer-center,
+footer .footer-right {
     display: block;
     width: 100%;
     margin-bottom: 40px;
@@ -447,7 +399,7 @@ nav #nav-check:checked ~ .nav-btn > label {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgb(var(--color-element-dark));
+  background: rgb(41, 49, 62);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,16 +441,16 @@ nav #nav-check:checked ~ .nav-btn > label {
 
 @keyframes flash {
   0% {
-    color: var(--color-text);
-    text-shadow: 0 0 7px var(--color-text);
+    color: rgb(68, 86, 120);
+    text-shadow: 0 0 7px rgb(68, 86, 120);
   }
   90% {
     color: #484848;
     text-shadow: none;
   }
   100% {
-    color: var(--color-text);
-    text-shadow: 0 0 7px var(--color-text);
+    color: rgb(68, 86, 120);
+    text-shadow: 0 0 7px rgb(68, 86, 120);
   }
 }
 .leter:nth-child(1) {
