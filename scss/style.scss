@@ -67,19 +67,18 @@ nav {
                 overflow: hidden;
                 transition-duration: 0.8s;
                 transition-property: transform;
-                &:hover {
-                    transform: rotate(360deg);
-                }
             }
-        }
-        p {
-            display: inline;
-            float: right;
-            padding: 15px 10px 17px 10px;
-            font-size: 18px;
-            text-decoration: none;
-            color: $color-text;
-            &:hover {
+            p {
+                display: inline;
+                float: right;
+                padding: 15px 10px 17px 10px;
+                font-size: 18px;
+                text-decoration: none;
+                color: $color-text;
+            }
+            &:hover > img,
+            &:hover > p {
+                transform: rotate(360deg);
                 color: $color-text-hover;
             }
         }
