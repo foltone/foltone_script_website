@@ -67,9 +67,9 @@ nav {
                 overflow: hidden;
                 transition-duration: 0.8s;
                 transition-property: transform;
-            }
-            img:hover {
-                transform: rotate(360deg);
+                &:hover {
+                    transform: rotate(360deg);
+                }
             }
         }
         p {
@@ -79,9 +79,9 @@ nav {
             font-size: 18px;
             text-decoration: none;
             color: $color-text;
-        }
-        p:hover {
-            color: $color-text-hover;
+            &:hover {
+                color: $color-text-hover;
+            }
         }
     }
     .nav-btn {
@@ -96,9 +96,9 @@ nav {
             padding: 15px 10px 17px 10px;
             text-decoration: none;
             color: $color-text;
-        }
-        a:hover {
-            color: $color-text-hover;
+            &:hover {
+                color: $color-text-hover;
+            }
         }
     }
 }
@@ -138,10 +138,10 @@ body.dark nav {
             background-color: #fff;
             border-radius: 50%;
             transition: transform 0.2s linear;
-        }
-        .ball:hover {
-            box-shadow: 0 0 0 rgba(44, 100, 204, 0.9);
-            animation: pulse 2s infinite;
+            &:hover {
+                box-shadow: 0 0 0 rgba(44, 100, 204, 0.9);
+                animation: pulse 2s infinite;
+            }
         }
     }
 }
@@ -214,7 +214,7 @@ body.dark .grid-item {
 
     color: white;
     text-decoration: none;
-    .bt-download:hover {
+    &:hover {
         background-color: rgb(32, 68, 178);
         text-decoration: underline;
     }
@@ -230,7 +230,7 @@ body.dark .grid-item {
 
     color: white;
     text-decoration: none;
-    .bt-repositorie:hover {
+    &:hover {
         background-color: rgb(52, 58, 64);
         text-decoration: underline;
     }
@@ -272,9 +272,9 @@ footer {
             text-decoration: none;
             color: $color-text;
             font-size: 22px;
-        }
-        a:hover {
-        text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
         }
         a:before {
             content: "|";
@@ -312,9 +312,9 @@ footer {
             color: #ffffff;
             text-align: center;
             line-height: 35px;
-        }
-        a:hover {
-            background-color: #646d73;
+            &:hover {
+                background-color: #646d73;
+            }
         }
     }
 }
@@ -365,10 +365,10 @@ body.dark footer {
                     height: 30px;
                     border-top: 4px solid #eee;
                 }
-            }
-            label:hover,
-            nav #nav-check:checked~.nav-btn>label {
-                color: $color-text-hover;;
+                &:hover,
+                nav #nav-check:checked~.nav-btn>label {
+                    color: $color-text-hover;;
+                }
             }
         }
         .nav-links {

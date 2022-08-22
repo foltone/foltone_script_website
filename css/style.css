@@ -191,7 +191,7 @@ body.dark .grid-item {
   color: white;
   text-decoration: none;
 }
-.bt-download .bt-download:hover {
+.bt-download:hover {
   background-color: rgb(32, 68, 178);
   text-decoration: underline;
 }
@@ -204,7 +204,7 @@ body.dark .grid-item {
   color: white;
   text-decoration: none;
 }
-.bt-repositorie .bt-repositorie:hover {
+.bt-repositorie:hover {
   background-color: rgb(52, 58, 64);
   text-decoration: underline;
 }
@@ -333,7 +333,7 @@ body.dark footer {
     border-top: 4px solid #eee;
   }
   nav .nav-btn label:hover,
-nav .nav-btn nav #nav-check:checked ~ .nav-btn > label {
+nav .nav-btn label nav #nav-check:checked ~ .nav-btn > label {
     color: rgb(84, 124, 197);
   }
   nav .nav-links {
