@@ -110,7 +110,7 @@ for (const item of data) {
         <h1>${item.name}</h1>
         <iframe src="https://www.youtube.com/embed/${item.vidéo}" frameborder="0">></iframe>
         <div class="list-btn">
-            <a target="_blank" href="${item.github}" class="btn"><img src="img/fivem.png">Post</a>
+            <a target="_blank" href="${item.cfx}" class="btn"><img src="img/fivem.png">Post</a>
             <a target="_blank" href="${item.github}" class="btn"><img src="img/github.png">Repository</a>
             <a target="_blank" href="${item.github}/archive/refs/heads/main.zip" class="btn"><img src="img/download.png">Download</a>
         </div>

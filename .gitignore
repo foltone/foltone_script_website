@@ -9,4 +9,5 @@ package-lock.json
 
 # scss
 css/*.css.map
-scss/styles.scss
+scss/*.scss
+scss/libs/*.scss
