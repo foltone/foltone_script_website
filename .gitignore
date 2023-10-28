@@ -6,8 +6,3 @@ package-lock.json
 # ide extensions
 .vscode-test
 .idea
-
-# scss
-css/*.css.map
-scss/*.scss
-scss/libs/*.scss

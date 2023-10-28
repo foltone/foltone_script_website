@@ -1,6 +1,6 @@
 function toggleMenu() {
     const menu = document.getElementById("menu");
-    if (menu.style.display != "block") {
+    if (menu.style.display !== "block") {
         // Show menu
         menu.style.display = "block";
         // appearance animation
@@ -9,8 +9,7 @@ function toggleMenu() {
         setTimeout(() => {
             menu.style.opacity = 1;
             menu.style.transform = "translateY(0)";
-        } , 100);
-
+        }, 100);
     } else {
         menu.style.display = "none";
     }
@@ -30,6 +29,11 @@ function eyeball() {
 }
 
 const data = [
+    {
+        name: "foltone barbershop",
+        vidéo: "CFfSFCFDYDs",
+        github: "https://github.com/foltone/foltone_barbershop",
+    },
     {
         name: "foltone ticket",
         vidéo: "5WvTWMpKUcM",
@@ -105,25 +109,54 @@ const scripts = document.getElementById("grid-scripts");
 for (const item of data) {
     const div = document.createElement("div");
     div.classList.add("script");
+
+    const h1 = document.createElement("h1");
+    h1.textContent = item.name;
+
+    const iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube.com/embed/" + item.vidéo;
+    iframe.frameBorder = "0";
+
+    const listBtn = document.createElement("div");
+    listBtn.classList.add("list-btn");
+
+    const aRepo = document.createElement("a");
+    aRepo.target = "_blank";
+    aRepo.href = item.github;
+    aRepo.classList.add("btn");
+    const imgRepo = document.createElement("img");
+    imgRepo.src = "img/github.png";
+    aRepo.appendChild(imgRepo);
+    aRepo.appendChild(document.createTextNode("Repository"));
+
+    const aDownload = document.createElement("a");
+    aDownload.target = "_blank";
+    aDownload.href = item.github + "/archive/refs/heads/main.zip";
+    aDownload.classList.add("btn");
+    const imgDownload = document.createElement("img");
+    imgDownload.src = "img/download.png";
+    aDownload.appendChild(imgDownload);
+    aDownload.appendChild(document.createTextNode("Download"));
+
     if (item.cfx) {
-        div.innerHTML = `
-        <h1>${item.name}</h1>
-        <iframe src="https://www.youtube.com/embed/${item.vidéo}" frameborder="0">></iframe>
-        <div class="list-btn">
-            <a target="_blank" href="${item.cfx}" class="btn"><img src="img/fivem.png">Post</a>
-            <a target="_blank" href="${item.github}" class="btn"><img src="img/github.png">Repository</a>
-            <a target="_blank" href="${item.github}/archive/refs/heads/main.zip" class="btn"><img src="img/download.png">Download</a>
-        </div>
-        `;
-    } else {
-        div.innerHTML = `
-        <h1>${item.name}</h1>
-        <iframe src="https://www.youtube.com/embed/${item.vidéo}" frameborder="0">></iframe>
-        <div class="list-btn">
-            <a target="_blank" href="${item.github}" class="btn"><img src="img/github.png">Repository</a>
-            <a target="_blank" href="${item.github}/archive/refs/heads/main.zip" class="btn"><img src="img/download.png">Download</a>
-        </div>
-        `;
+        const aCfx = document.createElement("a");
+        aCfx.target = "_blank";
+        aCfx.href = item.cfx;
+        aCfx.classList.add("btn");
+        const imgCfx = document.createElement("img");
+        imgCfx.src = "img/fivem.png";
+        aCfx.appendChild(imgCfx);
+        aCfx.appendChild(document.createTextNode("Post"));
+
+        listBtn.appendChild(aCfx);
     }
+
+    listBtn.appendChild(aRepo);
+    listBtn.appendChild(aDownload);
+
+    div.appendChild(h1);
+    div.appendChild(iframe);
+    div.appendChild(listBtn);
+
     scripts.appendChild(div);
 }
