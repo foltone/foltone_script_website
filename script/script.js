@@ -33,6 +33,7 @@ const data = [
         name: "foltone barbershop",
         vidéo: "CFfSFCFDYDs",
         github: "https://github.com/foltone/foltone_barbershop",
+        cfx: "https://forum.cfx.re/t/free-barbershop-esx-legacy-rageui-0-00ms/5180811"
     },
     {
         name: "foltone ticket",
