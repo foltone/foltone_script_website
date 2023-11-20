@@ -30,6 +30,11 @@ function eyeball() {
 
 const data = [
     {
+        name: "foltone admin",
+        vidéo: "G8zTOF0x32s",
+        github: "https://github.com/foltone/foltone_admin",
+    },
+    {
         name: "foltone barbershop",
         vidéo: "CFfSFCFDYDs",
         github: "https://github.com/foltone/foltone_barbershop",
