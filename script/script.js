@@ -30,6 +30,11 @@ function eyeball() {
 
 const data = [
     {
+        name: "foltone vehiclelock",
+        vidéo: "cX1-LzVR0Vc",
+        github: "https://github.com/foltone/foltone_vehiclelock",
+    },
+    {
         name: "foltone admin",
         vidéo: "G8zTOF0x32s",
         github: "https://github.com/foltone/foltone_admin",
@@ -83,16 +88,6 @@ const data = [
         github: "https://github.com/foltone/foltone_template"
     },
     {
-        name: "foltone keys",
-        vidéo: "lZMfPSfP-qo",
-        github: "https://github.com/foltone/foltone_keys"
-    },
-    {
-        name: "foltone f5",
-        vidéo: "D16ODqkkInA",
-        github: "https://github.com/foltone/foltone_f5"
-    },
-    {
         name: "foltone ambulance job",
         vidéo: "gIH_8Y3PxqU",
         github: "https://github.com/foltone/foltone_ambulance_job"
@@ -102,12 +97,6 @@ const data = [
         vidéo: "whDHVl6aW48",
         github: "https://github.com/foltone/foltone_pack_shops"
     },
-    {
-        name: "folltone zone safe",
-        vidéo: "R1hPkNakpkU",
-        github: "https://github.com/foltone/foltone_zone_safe"
-    }
-
 ]
 
 const scripts = document.getElementById("grid-scripts");
