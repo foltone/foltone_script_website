@@ -336,6 +336,12 @@ body .grid-scripts .script iframe {
   height: 295px;
   width: 530px;
 }
+body .grid-scripts .script .main-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 295px;
+  width: 530px;
+}
 body .grid-scripts .script .list-btn {
   position: relative;
   display: flex;
