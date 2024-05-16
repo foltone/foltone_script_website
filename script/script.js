@@ -30,6 +30,11 @@ function eyeball() {
 
 const data = [
     {
+        name: "Base template updated",
+        vidéo: "y1A8_mHQ4bo",
+        github: "https://github.com/foltone/foltone_template"
+    },
+    {
         name: "Personal menu",
         vidéo: "6nLM4hNjchM",
         github: "https://github.com/foltone/foltone_f5",
