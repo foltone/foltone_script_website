@@ -35,6 +35,12 @@ const data = [
         github: "https://github.com/foltone/foltone_template"
     },
     {
+        name: "Gruppe6 Robbery and Job",
+        vidéo: "oiSyG19OKUs",
+        cfx: "https://forum.cfx.re/t/gruppe6-robbery-and-job-esx-qbcore-standalone-0-00ms-rageui/5233541",
+        tebex: "https://foltone-store.tebex.io/package/6264494"
+    },
+    {
         name: "Personal menu",
         vidéo: "6nLM4hNjchM",
         github: "https://github.com/foltone/foltone_f5",
