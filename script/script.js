@@ -30,6 +30,17 @@ function eyeball() {
 
 const data = [
     {
+        name: "Clothes shop",
+        vidéo: "WOrX31JgJbE",
+        github: "https://github.com/foltone/foltone_clotheshop",
+    },
+    {
+        name: "Ammunation robbery",
+        vidéo: "SQIMuFw23K8",
+        cfx: "https://forum.cfx.re/t/ammunation-robbery-ammunation-menu-esx-qbcore-standalone/5240216",
+        tebex: "https://foltone-store.tebex.io/package/6290232"
+    },
+    {
         name: "Base template updated",
         vidéo: "y1A8_mHQ4bo",
         github: "https://github.com/foltone/foltone_template"
@@ -139,29 +150,9 @@ const data = [
         github: "https://github.com/foltone/foltone_distributeur"
     },
     {
-        name: "Accessories shop",
-        vidéo: "YdjPtrOVNr8",
-        github: "https://github.com/foltone/foltone_accessories"
-    },
-    {
-        name: "Clothes shop",
-        vidéo: "YdjPtrOVNr8",
-        github: "https://github.com/foltone/foltone_clothes"
-    },
-    {
-        name: "Base template",
-        vidéo: "J3D7ad_v1B0",
-        github: "https://github.com/foltone/foltone_template"
-    },
-    {
         name: "Ambulance job",
         vidéo: "gIH_8Y3PxqU",
         github: "https://github.com/foltone/foltone_ambulance_job"
-    },
-    {
-        name: "Pack shops",
-        vidéo: "whDHVl6aW48",
-        github: "https://github.com/foltone/foltone_pack_shops"
     },
 ]
 
