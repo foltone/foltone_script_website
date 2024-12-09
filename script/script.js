@@ -30,6 +30,11 @@ function eyeball() {
 
 const data = [
     {
+        name: "Bag inventory",
+        vidéo: "PlJsI2KrOCk",
+        tebex: "https://foltone-store.tebex.io/package/6430050"
+    },
+    {
         name: "Clothes shop",
         vidéo: "WOrX31JgJbE",
         github: "https://github.com/foltone/foltone_clotheshop",
