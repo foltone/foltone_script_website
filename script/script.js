@@ -30,6 +30,11 @@ function eyeball() {
 
 const data = [
     {
+        name: "LS CUSTOMS",
+        vidéo: "8SzdKwq7bEc",
+        tebex: "https://foltone-store.tebex.io/package/6642457"
+    },
+    {
         name: "Garage",
         vidéo: "Thexh1YD5Ok",
         tebex: "https://foltone-store.tebex.io/package/6585893"
