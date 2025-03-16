@@ -30,6 +30,11 @@ function eyeball() {
 
 const data = [
     {
+        name: "Tatoos Shops",
+        vidéo: "NPN7heXusjg ",
+        github: "https://github.com/foltone/foltone_tatooshop"
+    },
+    {
         name: "LS CUSTOMS",
         vidéo: "8SzdKwq7bEc",
         tebex: "https://foltone-store.tebex.io/package/6642457"
