@@ -32,7 +32,7 @@ const data = [
     {
         name: "Tatoos Shops",
         vidéo: "NPN7heXusjg ",
-        github: "https://github.com/foltone/foltone_tatooshop"
+        github: "https://github.com/foltone/foltone_tattooshop"
     },
     {
         name: "LS CUSTOMS",
